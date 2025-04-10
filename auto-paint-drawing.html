@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pixel Paint - Auto Paint</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="auto-paint-style.css">
+</head>
+<body class="bg-gray-900 text-white flex flex-col items-center py-8">
+  <h1 class="text-3xl font-bold mb-4">🎨 Pixel Paint - Auto Paint</h1>
+
+  <div class="mb-4 flex flex-wrap gap-2 justify-center">
+    <button id="toggleAutoPaint" class="bg-blue-600 px-3 py-1 rounded hover:bg-blue-700">Toggle Auto Paint</button>
+    <button id="downloadBtn" class="bg-green-600 px-3 py-1 rounded hover:bg-green-700">Export PNG</button>
+  </div>
+
+  <canvas id="canvas" class="border-2 border-white"></canvas>
+
+  <script src="auto-paint-script.js"></script>
+</body>
+</html>
