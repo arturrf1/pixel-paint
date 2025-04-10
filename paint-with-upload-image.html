@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pixel Paint - Upload Image</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="paint-style.css">
+</head>
+<body class="bg-gray-900 text-white flex flex-col items-center py-8">
+  <h1 class="text-3xl font-bold mb-4">🎨 Pixel Paint - Upload Image</h1>
+
+  <div class="mb-4 flex flex-wrap gap-2 justify-center">
+    <input type="file" id="imageUpload" class="bg-purple-600 px-3 py-1 rounded hover:bg-purple-700">
+    <button id="downloadBtn" class="bg-green-600 px-3 py-1 rounded hover:bg-green-700">Export PNG</button>
+  </div>
+
+  <canvas id="canvas" class="border-2 border-white"></canvas>
+
+  <script src="paint-image-script.js"></script>
+</body>
+</html>
